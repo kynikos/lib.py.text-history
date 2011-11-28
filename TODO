@@ -1,0 +1,10 @@
+* Migliorare le eccezioni
+* Potrei usare assert per fare i controlli dei moduli opzionali
+* Al momento l'undo di un cut e il redo di un paste con replace vengono fatti
+  in 2 tempi.
+  Passi per riprodurre:
+  - tagliare del testo
+  - reincollare il testo al posto di una selezione
+  - il testo viene inserito prima della selezione
+  - la selezione viene cancellata al redo successivo
+  Trovare il modo di fare le due operazioni con una sola chiamata
