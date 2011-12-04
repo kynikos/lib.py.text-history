@@ -16,16 +16,14 @@
 # You should have received a copy of the GNU General Public License
 # along with TextHistory.  If not, see <http://www.gnu.org/licenses/>.
 
-"""
-TextHistory - A simple undo/redo engine for plain text and wxPython TextCtrl.
+from distutils.core import setup
 
-@author: Dario Giovannetti
-@copyright: Copyright (C) 2011 Dario Giovannetti <dev@dariogiovannetti.com>
-@license: GPLv3
-@version: 1.0
-@date: 2011-11-28
-"""
-
-
-def checktext(text):
-    return isinstance(text, str)
+setup(name='texthistory',
+      version='1.0.0pb1',
+      description='A simple undo/redo engine for plain text and wxPython '
+                  'TextCtrl.',
+      author='Dario Giovannetti',
+      author_email='dev@dariogiovannetti.com',
+      url='https://github.com/kynikos/texthistory',
+      license='GPLv3',
+      packages=['texthistory'])

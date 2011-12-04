@@ -22,8 +22,8 @@ TextHistory - A simple undo/redo engine for plain text and wxPython TextCtrl.
 @author: Dario Giovannetti
 @copyright: Copyright (C) 2011 Dario Giovannetti <dev@dariogiovannetti.com>
 @license: GPLv3
-@version: 1.0
-@date: 2011-11-28
+@version: 1.0.0pb1
+@date: 2011-12-03
 """
 
 from difflib import SequenceMatcher
@@ -39,11 +39,6 @@ try:
 except ImportError:
     wx = None
 
-if sys.version_info.major < 3:
-    from python2 import checktext
-else:
-    from python3 import checktext
-
 
 class TextHistory():
     current = None
@@ -52,7 +47,7 @@ class TextHistory():
     MAX_CHANGES = None
     
     def __init__(self, text, maxchanges=0):
-        if not checktext(text):
+        if not self.checktext(text):
             raise InvalidTextError()
         if maxchanges < 0:
             raise InvalidMaxChangesError()
@@ -61,6 +56,13 @@ class TextHistory():
         self.stack = []
         self.currid = -1
         self.MAX_CHANGES = maxchanges
+    
+    @staticmethod
+    def checktext(text):
+        if sys.version_info.major < 3:
+            return (isinstance(text, str) or isinstance(text, unicode))
+        else:
+            return isinstance(text, str)
     
     def _get_changes(self, new):
         s = SequenceMatcher(None, self.current, new)
