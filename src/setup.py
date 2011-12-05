@@ -24,6 +24,6 @@ setup(name='texthistory',
                   'TextCtrl.',
       author='Dario Giovannetti',
       author_email='dev@dariogiovannetti.com',
-      url='https://github.com/kynikos/texthistory',
+      url='https://github.com/kynikos/text-history',
       license='GPLv3',
       packages=['texthistory'])
