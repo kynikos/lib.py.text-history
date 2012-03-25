@@ -1,5 +1,5 @@
 # TextHistory - A simple undo/redo engine for plain text and wxPython TextCtrl.
-# Copyright (C) 2011 Dario Giovannetti <dev@dariogiovannetti.com>
+# Copyright (C) 2011 Dario Giovannetti <dev@dariogiovannetti.net>
 #
 # This file is part of TextHistory.
 #
@@ -23,7 +23,7 @@ setup(name='texthistory',
       description='A simple undo/redo engine for plain text and wxPython '
                   'TextCtrl.',
       author='Dario Giovannetti',
-      author_email='dev@dariogiovannetti.com',
+      author_email='dev@dariogiovannetti.net',
       url='https://github.com/kynikos/text-history',
       license='GPLv3',
       packages=['texthistory'])
