@@ -1,17 +1,17 @@
 # Maintainer: Dario Giovannetti <dev at dariogiovannetti dot net>
 
 pkgname='python-texthistory'
-pkgver='1.0.0pb1'
-pkgrel=2
-pkgdesc="A simple Python undo/redo engine for plain text and wxPython TextCtrl (PRE-BETA!)."
+pkgver='1.0.0'
+pkgrel=1
+pkgdesc="Python undo/redo engine for plain text and wxPython TextCtrl"
 arch=('any')
 url="https://github.com/kynikos/text-history"
 license=('GPL3')
 depends=('python')
-source=("http://www.dariogiovannetti.net/files/$pkgname-$pkgver.tar.gz")
-md5sums=('dfa5b3446524e2c5fb182de92a516622')
+source=("http://downloads.sourceforge.net/project/kynikos/arch/$pkgname-$pkgver.tar.bz2")
+sha256sums=('51b9833ee9a782a374c688853d0d19d5609f55b9ebdb71e2c5e1d9cf9dbfe92f')
 
 package() {
     cd "$srcdir/$pkgname-$pkgver"
-    python setup.py install --prefix="/usr" --root="$pkgdir" --optimize=1
+    python setup.py install --root="$pkgdir" --optimize=1
 }

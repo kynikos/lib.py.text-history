@@ -1,5 +1,5 @@
-# TextHistory - A simple undo/redo engine for plain text and wxPython TextCtrl.
-# Copyright (C) 2011 Dario Giovannetti <dev@dariogiovannetti.net>
+# TextHistory - Undo/redo engine for plain text and wxPython TextCtrl.
+# Copyright (C) 2011-2013 Dario Giovannetti <dev@dariogiovannetti.net>
 #
 # This file is part of TextHistory.
 #
@@ -17,13 +17,13 @@
 # along with TextHistory.  If not, see <http://www.gnu.org/licenses/>.
 
 """
-TextHistory - A simple undo/redo engine for plain text and wxPython TextCtrl.
+TextHistory - Undo/redo engine for plain text and wxPython TextCtrl.
 
 @author: Dario Giovannetti
-@copyright: Copyright (C) 2011 Dario Giovannetti <dev@dariogiovannetti.net>
+@copyright: Copyright (C) 2011-2013 Dario Giovannetti <dev@dariogiovannetti.net>
 @license: GPLv3
-@version: 1.0.0pb1
-@date: 2011-12-03
+@version: 1.0.0
+@date: 2013-09-05
 """
 
 from difflib import SequenceMatcher
