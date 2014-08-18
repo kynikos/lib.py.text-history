@@ -1,5 +1,5 @@
 # TextHistory - Undo/redo engine for plain text and wxPython TextCtrl.
-# Copyright (C) 2011-2013 Dario Giovannetti <dev@dariogiovannetti.net>
+# Copyright (C) 2011-2014 Dario Giovannetti <dev@dariogiovannetti.net>
 #
 # This file is part of TextHistory.
 #
