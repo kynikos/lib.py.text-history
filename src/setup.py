@@ -25,4 +25,4 @@ setup(name='texthistory',
       author_email='dev@dariogiovannetti.net',
       url='https://github.com/kynikos/text-history',
       license='GPLv3',
-      packages=['texthistory'])
+      packages=['texthistory', ])
