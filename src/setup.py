@@ -23,6 +23,6 @@ setup(name='texthistory',
       description='Undo/redo engine for plain text and wxPython TextCtrl.',
       author='Dario Giovannetti',
       author_email='dev@dariogiovannetti.net',
-      url='https://github.com/kynikos/text-history',
+      url='https://github.com/kynikos/lib.py.text-history',
       license='GPLv3',
       packages=['texthistory', ])
