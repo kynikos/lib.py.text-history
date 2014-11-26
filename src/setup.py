@@ -19,7 +19,7 @@
 from distutils.core import setup
 
 setup(name='texthistory',
-      version='1.0.0',
+      version='1.0.1',
       description='Undo/redo engine for plain text and wxPython TextCtrl.',
       author='Dario Giovannetti',
       author_email='dev@dariogiovannetti.net',
